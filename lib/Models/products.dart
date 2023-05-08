@@ -7,7 +7,7 @@ class Data {
   int heading;
   int altitude;
   int batterylevel;
-  int gpsaccuracy;
+  double? gpsaccuracy;
   int numberofsatellites;
 
   Data({
@@ -19,7 +19,7 @@ class Data {
     required this.heading,
     required this.altitude,
     required this.batterylevel,
-    required this.gpsaccuracy,
+    this.gpsaccuracy,
     required this.numberofsatellites,
   });
 

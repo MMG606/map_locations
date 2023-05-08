@@ -1,8 +1,5 @@
-// ignore_for_file: non_constant_identifier_names
-
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:map_locations/Models/products.dart';
@@ -24,10 +21,8 @@ class DataController extends GetxController {
 
   Future fetchData() async {
     try {
-      // String apiUrl =
-      //     'http://platform.geovisiontechnologies.com:1005/GVMOBILERECRUITMENT/proxy.ashx?http://mohammadghalayini606@gmail.com';
       String apiUrl =
-          'https://mocki.io/v1/3cd45daf-6752-4186-a731-fcc0da8b0420';
+          'http://platform.geovisiontechnologies.com:1005/GVMOBILERECRUITMENT/proxy.ashx?http://mohammadghalayini606@gmail.com';
 
       final response = await http.get(Uri.parse(apiUrl));
 
@@ -54,10 +49,8 @@ class DataController extends GetxController {
 //refresh data list
   Future RefreshData() async {
     try {
-      // String apiUrl =
-      //     'http://platform.geovisiontechnologies.com:1005/GVMOBILERECRUITMENT/proxy.ashx?http://mohammadghalayini606@gmail.com';
       String apiUrl =
-          'https://mocki.io/v1/3cd45daf-6752-4186-a731-fcc0da8b0420';
+          'http://platform.geovisiontechnologies.com:1005/GVMOBILERECRUITMENT/proxy.ashx?http://mohammadghalayini606@gmail.com';
 
       final response = await http.get(Uri.parse(apiUrl));
 
@@ -101,7 +94,7 @@ class DataController extends GetxController {
                         'lat: ${data_List[i].lat}',
                         textAlign: TextAlign.center,
                       ),
-                      Text('lng: ${data_List[i].lng}\$'),
+                      Text('lng: ${data_List[i].lng}'),
                       Text('speed: ${data_List[i].speed}'),
                       Text('heading: ${data_List[i].heading}'),
                       Text('altitude: ${data_List[i].altitude}'),
