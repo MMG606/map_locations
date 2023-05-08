@@ -2,9 +2,10 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:map_locations/Models/products.dart';
+
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
+import 'package:map_locations/Models/data.dart';
 import 'package:map_locations/Screens/map.dart';
 
 class DataController extends GetxController {
