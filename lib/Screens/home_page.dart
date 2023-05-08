@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:map_locations/Controllers/products_controller.dart';
+import 'package:map_locations/Controllers/data_controller.dart';
 import 'package:get/get.dart';
 
 import '../widgets/list_view.dart';
-import '../widgets/product_details.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -18,9 +17,9 @@ class HomePage extends StatelessWidget {
         body: Obx(
           () => Column(
             children: [
-              ProductList(),
+              DataList(),
               if (dataController.data_details.isNotEmpty) ...[
-                ProductDetails(),
+                HomePage(),
               ] else ...[
                 Container(
                   color: const Color.fromARGB(255, 223, 223, 223),
